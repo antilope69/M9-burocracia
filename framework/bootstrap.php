@@ -5,7 +5,10 @@ use framework\App;
 use framework\Database\Connection;
 use framework\Database\Database;
 use framework\Route;
-
+require_once 'App.php';
+require_once 'Route.php';
+require_once 'Database/Database.php';
+require_once 'Database/Connection.php';
 $routes= require '../routes.php';
 
 $dotenv = Dotenv::createImmutable(__DIR__.'/..');

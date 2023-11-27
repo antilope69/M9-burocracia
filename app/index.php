@@ -1,8 +1,9 @@
 <?php
 
 use framework\App;
-$task = App::get("database")->selectAll("tasks");
 
-$greeting = "hello world!";
+$tasks = App::get('database')->selectAll('tasks');
 
-require  "../resources/views/index.blade.php";
+$greeting = "Hello World!";
+
+require '../resources/views/index.blade.php';
